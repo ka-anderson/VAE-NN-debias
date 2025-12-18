@@ -1,0 +1,790 @@
+{
+    "seed": 0,
+    "exp_id": "05_0_mnist_bg_knn",
+    "run_id": "B1b",
+    "epochs": 200000,
+    "train_interface": {
+        "classname": "kNNTrainInterface",
+        "optimizer": [
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            }
+        ],
+        "loss_fn": null,
+        "model": [
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    32,
+                    32
+                ],
+                "activation": "relu",
+                "final_activation": "no_activation",
+                "flatten_out": false,
+                "partial_weights_from": "experiments/05_0_mnist_bg_knn/output/A0a/model_weights_local/combined_best_loss.pth"
+            }
+        ],
+        "base_version": 2.2,
+        "l": 0.9,
+        "encoder": {
+            "classname": "VariationalLayer",
+            "return_latent_only": true,
+            "return_mean_only": false,
+            "variance_scale": 1
+        },
+        "max_k": 400,
+        "min_k": 1,
+        "smoothing": true,
+        "smoothing_kernel": "tensor([[[0.0044, 0.0540, 0.2420, 0.3991, 0.2420, 0.0540, 0.0044]]])"
+    },
+    "dataset": {
+        "classname": "DatasetMNISTBackground",
+        "ds_id": "mnist",
+        "batch_size": 8000,
+        "num_workers": 4,
+        "pin_memory": false,
+        "normalization": "none",
+        "img_size": 28,
+        "augment": false,
+        "correlation": 0,
+        "output_label": "bg",
+        "neg_label": -1
+    },
+    "start_from_epoch": 0,
+    "use_training_data_to_train": true,
+    "gpus": [
+        0
+    ],
+    "debug_distributed": false,
+    "tboard_model_weights": false,
+    "tboard_model_outputs": false,
+    "save_model": true,
+    "save_model_freq": 500,
+    "verbose_mode": false,
+    "use_tboard": true,
+    "lr_scheduler": null,
+    "test_interface": null,
+    "eval_freq": 100
+}

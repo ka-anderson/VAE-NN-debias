@@ -1,0 +1,18 @@
+torch>=2.0.0
+torchvision>=0.15.1
+
+numpy>=1.24.2
+tqdm>=4.66.0
+
+matplotlib>=3.7.1
+ipympl # interactive plots
+pandas>=1.5.3
+tabulate>=0.9.0 # required by pandas
+plotly>=5.20.0
+notebook>=5.3 # required by plotly for jupyter
+ipywidgets>=7.5 # required by plotly for jupyter
+
+tensorboard
+scikit-image # loading image datasets
+
+ic-loss # inverse contrastive loss (related paper)

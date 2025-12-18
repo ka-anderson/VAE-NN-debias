@@ -1,0 +1,103 @@
+{
+    "seed": 0,
+    "exp_id": "04_1_ffhq_soft_intro_vae",
+    "run_id": "1e",
+    "epochs": 500,
+    "train_interface": {
+        "classname": "SoftIntroVAETrainInterface",
+        "optimizer": null,
+        "loss_fn": "MSELoss()",
+        "model": {
+            "classname": "CustomSoftIntroVAE",
+            "cdim": 3,
+            "zdim": 64,
+            "channels": [
+                64,
+                128,
+                256,
+                512,
+                512,
+                32
+            ],
+            "image_size": 128,
+            "conditional": false,
+            "forward_output": "org"
+        },
+        "base_version": 2.2,
+        "mean_scale": 5,
+        "beta_kl": 0.7,
+        "beta_neg": 256,
+        "beta_rec": 0.9
+    },
+    "dataset": {
+        "classname": "DatasetFFHQAttributes",
+        "ds_id": "DatasetFFHQ",
+        "batch_size": 64,
+        "num_workers": 4,
+        "pin_memory": false,
+        "img_size": 128,
+        "source_img_size": 128,
+        "to_zero_one": true,
+        "return_img": true,
+        "return_index": false,
+        "neg_label": -1,
+        "attribute_index": 30
+    },
+    "start_from_epoch": 0,
+    "use_training_data_to_train": true,
+    "gpus": [
+        0
+    ],
+    "debug_distributed": false,
+    "tboard_model_weights": false,
+    "tboard_model_outputs": false,
+    "save_model": true,
+    "save_model_freq": 10,
+    "verbose_mode": true,
+    "use_tboard": true,
+    "lr_scheduler": [
+        {
+            "type": "MultiStepLR",
+            "milestones": {
+                "350": 1
+            },
+            "gamma": 0.1
+        },
+        {
+            "type": "MultiStepLR",
+            "milestones": {
+                "350": 1
+            },
+            "gamma": 0.1
+        }
+    ],
+    "test_interface": {
+        "classname": "VAETestInterface",
+        "dataset": {
+            "classname": "DatasetFFHQAttributes",
+            "ds_id": "DatasetFFHQ",
+            "batch_size": 64,
+            "num_workers": 4,
+            "pin_memory": false,
+            "img_size": 128,
+            "source_img_size": 128,
+            "to_zero_one": true,
+            "return_img": true,
+            "return_index": false,
+            "neg_label": -1,
+            "attribute_index": 30
+        },
+        "encoder": [
+            "Encoder(\n  (main): Sequential(\n    (0): Conv2d(3, 64, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2), bias=False)\n    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n    (2): LeakyReLU(negative_slope=0.2)\n    (3): AvgPool2d(kernel_size=2, stride=2, padding=0)\n    (res_in_64): ResidualBlock(\n      (conv_expand): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (down_to_32): AvgPool2d(kernel_size=2, stride=2, padding=0)\n    (res_in_32): ResidualBlock(\n      (conv_expand): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (down_to_16): AvgPool2d(kernel_size=2, stride=2, padding=0)\n    (res_in_16): ResidualBlock(\n      (conv_expand): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (down_to_8): AvgPool2d(kernel_size=2, stride=2, padding=0)\n    (res_in_8): ResidualBlock(\n      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (down_to_4): AvgPool2d(kernel_size=2, stride=2, padding=0)\n    (res_in_4): ResidualBlock(\n      (conv_expand): Conv2d(512, 32, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(512, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (down_to_2): AvgPool2d(kernel_size=2, stride=2, padding=0)\n    (res_in_2): ResidualBlock(\n      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n  )\n  (fc): Linear(in_features=128, out_features=128, bias=True)\n)",
+            {
+                "classname": "VariationalLayer",
+                "return_latent_only": false,
+                "return_mean_only": true,
+                "variance_scale": 1,
+                "version": 2
+            }
+        ],
+        "decoder": "Decoder(\n  (fc): Sequential(\n    (0): Linear(in_features=64, out_features=128, bias=True)\n    (1): ReLU(inplace=True)\n  )\n  (main): Sequential(\n    (res_in_4): ResidualBlock(\n      (conv1): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(32, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (up_to_8): Upsample(scale_factor=2.0, mode='nearest')\n    (res_in_8): ResidualBlock(\n      (conv_expand): Conv2d(32, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(32, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (up_to_16): Upsample(scale_factor=2.0, mode='nearest')\n    (res_in_16): ResidualBlock(\n      (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (up_to_32): Upsample(scale_factor=2.0, mode='nearest')\n    (res_in_32): ResidualBlock(\n      (conv_expand): Conv2d(512, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(512, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (up_to_64): Upsample(scale_factor=2.0, mode='nearest')\n    (res_in_64): ResidualBlock(\n      (conv_expand): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(256, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (up_to_128): Upsample(scale_factor=2.0, mode='nearest')\n    (res_in_128): ResidualBlock(\n      (conv_expand): Conv2d(128, 64, kernel_size=(1, 1), stride=(1, 1), bias=False)\n      (conv1): Conv2d(128, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (up_to_256): Upsample(scale_factor=2.0, mode='nearest')\n    (res_in_256): ResidualBlock(\n      (conv1): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu1): LeakyReLU(negative_slope=0.2, inplace=True)\n      (conv2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)\n      (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)\n      (relu2): LeakyReLU(negative_slope=0.2, inplace=True)\n    )\n    (predict): Conv2d(64, 3, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))\n  )\n)"
+    },
+    "eval_freq": 10
+}

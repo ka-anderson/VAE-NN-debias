@@ -1,0 +1,1848 @@
+{
+    "seed": 0,
+    "exp_id": "01_3_chexpert_knn",
+    "run_id": "A0_l0.99999_kernel3_depth8_width64",
+    "epochs": 200,
+    "train_interface": {
+        "classname": "kNNTrainInterface",
+        "optimizer": [
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            },
+            {
+                "type": "Adam",
+                "lr": 0.0001,
+                "betas": [
+                    0.9,
+                    0.999
+                ],
+                "eps": 1e-08,
+                "weight_decay": 0
+            }
+        ],
+        "loss_fn": null,
+        "model": [
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            },
+            {
+                "classname": "MLP",
+                "out_channels": 1,
+                "in_channels": 1,
+                "hidden_channels": [
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64,
+                    64
+                ],
+                "activation": "lrelu",
+                "final_activation": "no_activation",
+                "flatten_out": false
+            }
+        ],
+        "base_version": 3.0,
+        "l": 0.99999,
+        "encoder": {
+            "classname": "VariationalLayer",
+            "return_latent_only": true,
+            "return_mean_only": false,
+            "variance_scale": 1,
+            "version": 2
+        },
+        "max_k": 4000.0,
+        "min_k": 1,
+        "smoothing": true,
+        "smoothing_kernel_size": 3,
+        "div_loss": "mse",
+        "smoothing_kernel": "tensor([[[0.0044, 0.0540, 0.2420, 0.3991, 0.2420, 0.0540, 0.0044]]])"
+    },
+    "dataset": {
+        "classname": "DatasetChexpertSmall",
+        "ds_id": "ChexpertSmall",
+        "batch_size": 10000,
+        "num_workers": 4,
+        "pin_memory": false,
+        "train_transform": null,
+        "train_set_size": -1,
+        "training_data_with_index": false,
+        "target_label": 17,
+        "neg_label_minus": true,
+        "img_size": null
+    },
+    "start_from_epoch": 0,
+    "gpus": [
+        0
+    ],
+    "debug_distributed": false,
+    "save_model": true,
+    "save_model_freq": -1,
+    "verbose_mode": false,
+    "use_tboard": true,
+    "lr_scheduler": null,
+    "test_interface": null,
+    "eval_freq": 0,
+    "multi_run_logger": "<training.logger.MultiRunLogger object at 0x7e567c369d00>",
+    "epoch_progressbar": false
+}
